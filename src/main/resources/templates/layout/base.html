@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width,
+                initial-scale=1,maximum-scale=1.0"/>
+
+        <title>The Barista.io | Java, Spring and Web Development tools and tutorials</title>
+        <meta name="description" content />
+
+        <link rel="author" href="https://twitter/pbazard" />
+        <link rel="canonical" href="https://thebarista.io">
+        <meta property="og:title" content="Java, Spring and Web Development tools and tutorials"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://thebarista.io"/>
+        <meta property="og:site_name" content="thebarista.io"/>
+        <meta property="og:description" content="Java, Spring and Web Development tools and tutorials"/>
+        <meta property="og:image" content="http://localhost:8080/img/favicon-32x32.png" />
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@thebarista" />
+        <meta name="twitter:domain" content="www.thebarista.io" />
+        <meta name="twitter:title" content="Java, Spring and Web Development tools and tutorials" />
+        <meta name="twitter:description" content="Java, Spring and Web Development tools tutorials" />
+        <meta name="twitter:image" content="http://localhost:8080/img/favicon-32x32.png" />
+
+        <link rel='dns-prefetch' href='//www.thebarista.io' />
+        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+        <link rel='dns-prefetch' href='//s.w.org' />
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Materialize CSS -->
+        <link th:href="@{/webjars/materializecss/0.97.0/css/materialize.css}"
+              rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link th:href="@{/css/custom.css}" rel="stylesheet">
+
+        <!-- favicon -->
+        <link th:href="@{/img/favicon.ico}" rel="icon">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <th:block th:replace="layout/partials/header"></th:block>
+
+        <!--
+        <section layout:fragment="content">
+            <p>Page content goes here</p>
+        </section>
+        -->
+        <th:block th:replace="layout/partials/footer"></th:block>
+
+        <script type="text/javascript" src="/webjars/jquery/2.1.4/jquery.js"></script>
+        <script type="text/javascript" src="/webjars/materializecss/0.97.0/js/materialize.js"></script>
+
+        <!-- Materialize dropdown menu -->
+        <script type="text/javascript">
+            (document).ready(function(){
+                $(".dropdown-button").dropdown();
+                $(".dropdown-trigger").dropdown();
+            });
+        </script>
+
+        <!-- Custom CSS -->
+        <script type="text/javascript" th:src="@{/js/custom.js}"></script>
+
+    </body>
+</html>
